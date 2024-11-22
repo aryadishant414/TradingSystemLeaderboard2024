@@ -1,0 +1,66 @@
+.App {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Full-height background */
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Responsive full-width table */
+table {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width on larger screens */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    word-wrap: break-word; /* Ensures text wraps within cell */
+    white-space: normal; /* Allow text to wrap */
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
+
+/* Loading spinner style */
+.loading-spinner {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-spinner::after {
+    content: "⏳";
+    display: inline-block;
+    margin-left: 10px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
